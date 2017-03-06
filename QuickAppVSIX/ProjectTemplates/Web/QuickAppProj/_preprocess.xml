@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Preprocess>
+  <!--
+  You can specify the path where this should show up in the
+  Add New Project / Add New Item dialog by setting the value below
+  -->
+  <TemplateInfo Path="CSharp\Web"/>
+  <Replacements Include="*.*" Exclude="README.html;*.vstemplate;*.jpg;*.png;*.ico;_preprocess.xml;_project.vstemplate.xml">
+    <add key="QuickApp" value="$saferootprojectname$"/>
+    <add key="Quick Application" value="$projectname$"/>
+    <add key="17070A46-661F-4A01-8B84-CE9C59173779" value="$guid1$"/>
+    <add key="15E38D17-ECED-49D4-A161-38EC79E795E9" value="$guid2$"/>
+    <add key="4B467D5D-FA6F-412E-8B45-45BF0630180C" value="$guid3$"/>
+    <add key="4b467d5d-fa6f-412e-8b45-45bf0630180c" value="$guid3$"/>
+    <add key="C4C99D7C-0A91-418A-AE87-FD4EE43892D8" value="$guid4$"/>
+    <add key="c4c99d7c-0a91-418a-ae87-fd4ee43892d8" value="$guid4$"/>
+  </Replacements>
+</Preprocess>

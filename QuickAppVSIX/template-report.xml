@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TemplateReport>
+  <ItemTemplates />
+  <ProjectTemplates>
+    <ProjectTemplate Path="ProjectTemplates\Web\QuickAppProj\Definitions\Web.CSharp.vstemplate" Name="QuickApp - ASP.NET Core/Angular2 Web Application (.NET Core)" Description="Project template for creating ASP.NET Core / Angular2 application with prebuilt user and role management for Quick Application development." ProjectType="CSharp" ProjectSubType="" />
+  </ProjectTemplates>
+  <Snippets />
+</TemplateReport>

@@ -1,0 +1,25 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <!-- Fore more info on multi project templates visit: http://msdn.microsoft.com/en-us/library/ms185308(v=vs.90).aspx -->
+
+  <TemplateData>
+    <Name>QuickApp - ASP.NET Core/Angular2 Web Application (.NET Core)</Name>
+    <Description>Project template for creating ASP.NET Core / Angular2 application with prebuilt user and role management for Quick Application development.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <DefaultName>Quick Application</DefaultName>
+    <SortOrder>5000</SortOrder>
+    <Icon>sw-file-icon.png</Icon>
+    <PreviewImage>sw-file-previewimage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <SolutionFolder Name="src">
+        <ProjectTemplateLink ProjectName="$safeprojectname$">QuickApp\src\QuickApp\MyTemplate.vstemplate</ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="DAL">QuickApp\src\DAL\MyTemplate.vstemplate</ProjectTemplateLink>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>TemplateBuilder, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>TemplateBuilder.RootWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

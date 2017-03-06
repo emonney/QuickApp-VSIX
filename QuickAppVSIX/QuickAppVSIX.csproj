@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{D6D3FB93-19E3-4BF8-AA48-C03C87D11FAC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuickAppVSIX</RootNamespace>
+    <AssemblyName>ASP.NET Core.Angular2 - QuickApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Label="TemplateBuilder">
+    <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.4.9-beta\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\ApplicationDbContext.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Core\AccountManager.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Core\ApplicationPermissions.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Core\CustomClaimTypes.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Core\Enums.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Core\Interfaces\IAccountManager.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\DatabaseInitializer.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\IUnitOfWork.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Models\ApplicationRole.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Models\ApplicationUser.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Models\Customer.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Models\Order.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Models\OrderDetail.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Models\Product.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Models\ProductCategory.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Properties\AssemblyInfo.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Repositories\CustomerRepository.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Repositories\Interfaces\ICustomerRepository.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Repositories\Interfaces\IOrdersRepository.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Repositories\Interfaces\IProductRepository.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Repositories\Interfaces\IRepository.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Repositories\OrdersRepository.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Repositories\ProductRepository.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Repositories\Repository.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\UnitOfWork.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Controllers\AccountController.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Controllers\AuthorizationController.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Controllers\CustomerController.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Controllers\HomeController.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Helpers\Extensions.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Helpers\LoggingEvents.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Helpers\MediaTypeNames.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Helpers\MinimumCountAttribute.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Helpers\Utilities.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Migrations\20170223064929_Initial.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Migrations\20170223064929_Initial.Designer.cs">
+      <DependentUpon>20170223064929_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Migrations\ApplicationDbContextModelSnapshot.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Policies\AssignRolesRequirement.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Policies\AuthPolicies.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Policies\ManageUserByIdRequirement.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Policies\ViewRoleByNameRequirement.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Policies\ViewUserByIdRequirement.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Program.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Startup.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\AutoMapperProfile.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\ClaimViewModel.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\CustomerViewModel.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\OrderViewModel.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\PageHeader.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\PermissionViewModel.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\ProductViewModel.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\RoleViewModel.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\UserEditViewModel.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\UserPatchViewModel.cs" />
+    <Compile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ViewModels\UserViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\global.json" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\DAL.xproj" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\Nuget.Config" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\project.json" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\appsettings.json" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\LICENSE" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\NuGet.config" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\package.json" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\project.json" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\QuickApp.xproj" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\README.md" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\tsconfig.json" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Views\Home\Index.cshtml" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Views\Shared\Error.cshtml" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Views\Shared\_Layout.cshtml" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Views\_ViewImports.cshtml" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\Views\_ViewStart.cshtml" />
+    <None Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\web.config" />
+    <None Include="Properties\template-builder.props" />
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ProjectTemplates\Web\QuickAppProj\Definitions\Web.CSharp.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\QuickApp.sln" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\DAL\MyTemplate.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\images\demo\banner1.png" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\images\demo\banner2.png" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\images\demo\banner3.png" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\images\demo\banner4.png" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\images\logo - inverse.png" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\images\logo.png" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\images\QuickApp.ico" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\scripts\alertify.js" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\styles\alertify.bootstrap.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\styles\alertify.core.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\styles\alertify.default.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\assets\styles\ngx-datatable.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\about\about.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\about\about.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\app.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\app.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\banner-demo.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\search-box.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\search-box.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\statistics-demo.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\statistics-demo.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\todo-demo.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\todo-demo.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\customers\customers.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\customers\customers.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\home\home.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\home\home.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\login\login.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\login\login.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\not-found\not-found.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\not-found\not-found.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\orders\orders.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\orders\orders.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\products\products.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\products\products.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\role-editor.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\role-editor.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\roles-management.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\roles-management.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\user-info.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\user-info.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\user-preferences.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\user-preferences.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\users-management.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\users-management.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\settings.component.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\settings.component.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\styles-external.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\styles.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\themes.css" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\dist\_placeholder.txt" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\MyTemplate.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\README.html" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\webpack.config.js" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\webpack.config.vendor.js" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\wwwroot\dist\_placeholder.txt" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\wwwroot\favicon.ico" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\sw-file-icon.png" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\sw-file-previewimage.png" />
+    <Content Include="ProjectTemplates\Web\QuickAppProj\_preprocess.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="QuickApp.ico" />
+    <Content Include="QuickApp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="stylesheet.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="TemplateBuilder, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TemplateBuilder.1.1.4.9-beta\lib\TemplateBuilder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\app-error.handler.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\app.module.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\about\about.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\app.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\banner-demo.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\search-box.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\statistics-demo.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\controls\todo-demo.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\customers\customers.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\home\home.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\login\login.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\not-found\not-found.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\orders\orders.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\products\products.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\role-editor.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\roles-management.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\user-info.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\user-preferences.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\controls\users-management.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\components\settings\settings.component.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\directives\autofocus.directive.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\directives\bootstrap-select.directive.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\directives\bootstrap-tab.directive.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\directives\bootstrap-toggle.directive.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\directives\equal-validator.directive.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\directives\last-element.directive.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\models\permission.model.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\models\role.model.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\models\user-edit.model.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\models\user-login.model.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\models\user.model.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\pipes\group-by.pipe.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\account.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\alert.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\animations.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\app-title.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\auth-guard.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\auth.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\can-deactivate-guard.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\configuration.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\db-keys.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\endpoint-factory.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\jwt-helper.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\local-store-manager.service.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\app\services\utilities.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\boot-client.ts" />
+    <TypeScriptCompile Include="ProjectTemplates\Web\QuickAppProj\QuickApp\src\QuickApp\ClientApp\boot-server.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
