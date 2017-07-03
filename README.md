@@ -1,7 +1,8 @@
 # QuickApp-VSIX
-Visual Studio Extension (VSIX) for the ASP.NET Core / Angular2 QuickApp project
-* Extension hosted on Visual Studio Marketplace: https://marketplace.visualstudio.com/items?itemName=adentum.QuickApp-ASPNETCoreAngular2ProjectTemplate
-* Actual Project on Github: https://github.com/emonney/QuickApp 
+Visual Studio Extension (VSIX) for the ASP.NET Core / Angular4 QuickApp project
+* Extension hosted on Visual Studio Marketplace: https://marketplace.visualstudio.com/items?itemName=adentum.QuickApp-ASPNETCoreAngularXProjectTemplate
+* Actual Project on Github: https://github.com/emonney/QuickApp
+* Live demo on http://quickapp.ebenmonney.com
 
 
 ## License
@@ -9,4 +10,4 @@ Visual Studio Extension (VSIX) for the ASP.NET Core / Angular2 QuickApp project
 Released under the [MIT License](https://github.com/emonney/QuickApp/blob/master/LICENSE).
 
 
-I would love to hear your [feedback](mailto:info@ebenmonney.com)
+I would love to hear your [feedback](mailto:contact@ebenmonney.com)

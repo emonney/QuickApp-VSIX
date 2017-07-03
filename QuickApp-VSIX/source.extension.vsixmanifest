@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="1.4" Language="en-US" Publisher="Ebenezer Monney" />
+    <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="1.5" Language="en-US" Publisher="Ebenezer Monney" />
     <DisplayName>QuickApp - ASP.NET Core/AngularX Project Template</DisplayName>
     <Description xml:space="preserve">ASP.NET Core / Angular4 startup project template with complete login, user and role management. Plus other useful services for Quick Application Development</Description>
     <MoreInfo>https://github.com/emonney/QuickApp</MoreInfo>
