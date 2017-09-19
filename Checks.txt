@@ -1,0 +1,2 @@
+* app.component.ts	=>					appTitle = "$projectname$";
+* app.component.spec.ts	=>				'Quick Application' = '$projectname$';
