@@ -10,4 +10,4 @@ Visual Studio Extension (VSIX) for the ASP.NET Core / Angular5 QuickApp project
 Released under the [MIT License](https://github.com/emonney/QuickApp/blob/master/LICENSE).
 
 
-I would love to hear your [feedback](mailto:contact@ebenmonney.com)
+I would love to hear your [feedback](mailto:contact@ebenmonney.com) | [www.ebenmonney.com](https://www.ebenmonney.com/contact)

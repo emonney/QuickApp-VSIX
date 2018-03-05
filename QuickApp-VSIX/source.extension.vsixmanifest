@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="2.5.1" Language="en-US" Publisher="Ebenezer Monney" />
-        <DisplayName>QuickApp - ASP.NET Core/AngularX Project Template</DisplayName>
-        <Description xml:space="preserve">ASP.NET Core / Angular5 startup project template with complete login, user and role management. Plus other useful services for Quick Application Development</Description>
+        <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="2.5.3" Language="en-US" Publisher="Ebenezer Monney" />
+        <DisplayName>QuickApp - ASP.NET Core/Angular5 Project Template</DisplayName>
+        <Description xml:space="preserve">ASP.NET Core 2.0 / Angular 5 startup project template with complete login, user and role management. Plus other useful services for Quick Application Development</Description>
         <MoreInfo>https://github.com/emonney/QuickApp</MoreInfo>
         <License>LICENSE.txt</License>
-        <GettingStartedGuide>http://ebenmonney.com/quickapp</GettingStartedGuide>
+        <GettingStartedGuide>https://ebenmonney.com/quickapp</GettingStartedGuide>
         <ReleaseNotes>ReadMe.html</ReleaseNotes>
         <Icon>QuickApp.ico</Icon>
-        <PreviewImage>logo - inverse.png</PreviewImage>
+        <PreviewImage>PreviewImage.png</PreviewImage>
         <Tags>angular, angular5, angularX, angular2, aspnet core, project, template, starter, quickapp, rad, rapid application development, aspnetcore, quick-app, angular 5, angular X, angular 2, ng5, ngX, ng2, quick application</Tags>
     </Metadata>
     <Installation>
