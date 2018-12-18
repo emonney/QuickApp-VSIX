@@ -1,3 +1,8 @@
-* app.component.ts	=>					appTitle = "$projectname$";
-* app.component.spec.ts	=>				'Quick Application' = '$projectname$';
-* ReadMe.html	=>				'$projectname$' = 'Quick Application';
+* app.component.ts	=>			 appTitle = "$projectname$";
+* app.component.spec.ts	=>		'Quick Application' = '$projectname$';
+* app.e2e-spec.ts	=>			'Quick Application' = '$projectname$';
+* index.html	=>				'$safeprojectname$' = '$projectname$';
+* about.component.html	=>		'$safeprojectname$' = 'QuickApp';
+* ReadMe.html	=>				'$safeprojectname$' = 'QuickApp';
+* *.template	=>				'$safeprojectname$' = 'QuickApp';
+* Update ReleaseNotes.rtf
