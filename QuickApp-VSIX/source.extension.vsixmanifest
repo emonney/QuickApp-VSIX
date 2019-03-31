@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="2.7.1" Language="en-US" Publisher="Ebenezer Monney" />
+    <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="2.7.2" Language="en-US" Publisher="Ebenezer Monney" />
     <DisplayName>QuickApp - ASP.NET Core/Angular7 Project Template</DisplayName>
-    <Description xml:space="preserve">Free ASP.NET Core 2.1 / Angular 7 startup project template with complete login, user and role management. Plus other useful services for Quick Application Development</Description>
+    <Description xml:space="preserve">Free ASP.NET Core 2.2 / Angular 7 startup project template with complete login, user and role management. Plus other useful services for Quick Application Development</Description>
     <MoreInfo>https://github.com/emonney/QuickApp</MoreInfo>
     <License>LICENSE.txt</License>
     <GettingStartedGuide>https://ebenmonney.com/quickapp</GettingStartedGuide>
     <ReleaseNotes>ReleaseNotes.rtf</ReleaseNotes>
     <Icon>QuickApp.ico</Icon>
     <PreviewImage>PreviewImage.png</PreviewImage>
-    <Tags>angular, angular7, angularX, angular2, aspnet core 2.1, project, template, starter, quickapp, rad, rapid application development, aspnetcore, quick-app, angular 7, angular X, angular 2, ng7, ngX, ng2, quick application</Tags>
+    <Tags>angular, angular7, angularX, angular2, aspnet core 2.2, project, template, starter, quickapp, rad, rapid application development, aspnetcore, quick-app, angular 7, angular X, angular 2, ng7, ngX, ng2, quick application</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />

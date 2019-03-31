@@ -5,9 +5,9 @@
 {\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f4\jclisttab\tx0}
 {\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f4\jclisttab\tx0}\listid1 }}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
-{\*\generator Riched20 10.0.17134}{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
-\pard\widctlpar\sb100\sa100\cf1\kerning36\b\f0\fs48 QuickApp\~- ASPNET Core 2.1 / Angular 7 startup project template\par
-\kerning0\b0\fs20 A startup\~\b Angular 7 / ASP.NET Core 2.1\b0\~(cross-platform )\~\b project template\b0\~with an end-to-end login, user and role management implementation. As well as other common functionalities for\~\b Quick Application Development\b0 .\par
+{\*\generator Riched20 10.0.17763}{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\widctlpar\sb100\sa100\cf1\kerning36\b\f0\fs48 QuickApp\~- ASPNET Core 2.2 / Angular 7 startup project template\par
+\kerning0\b0\fs20 A startup\~\b Angular 7 / ASP.NET Core 2.2\b0\~(cross-platform )\~\b project template\b0\~with an end-to-end login, user and role management implementation. As well as other common functionalities for\~\b Quick Application Development\b0 .\par
 {{\field{\*\fldinst{HYPERLINK "https://twitter.com/kommand"}}{\fldrslt{\ul\cf2\cf2\ul FOLLOW ME}}}}\f0\fs20\~on twitter for important updates\par
 For the older asp.net core 1.x version:\~{{\field{\*\fldinst{HYPERLINK "https://github.com/emonney/QuickApp-VSIX/releases/tag/v1.5"}}{\fldrslt{\ul\cf2\cf2\ul Download}}}}\f0\fs20\par
 
@@ -16,9 +16,9 @@ For the older asp.net core 1.x version:\~{{\field{\*\fldinst{HYPERLINK "https://
 \pard\widctlpar\sb100\sa100\cf1\b\f0\fs36 INTRODUCING QUICKAPP PREMIUM TEMPLATES\par
 
 \pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\b0\fs20 All features of free version\par
-{\pntext\f4\'B7\tab}IdentityServer4\par
-{\pntext\f4\'B7\tab}Angular CLI\par
-{\pntext\f4\'B7\tab}Angular Material or Bootstrap4\par
+{\pntext\f4\'B7\tab}Angular Material\par
+{\pntext\f4\'B7\tab}Reactive forms\par
+{\pntext\f4\'B7\tab}Public Registration, Password Recovery & Reset, Email Confirmation\par
 {\pntext\f4\'B7\tab}Priority Email Support\par
 {\pntext\f4\'B7\tab}Etc\par
 
@@ -33,7 +33,7 @@ For the older asp.net core 1.x version:\~{{\field{\*\fldinst{HYPERLINK "https://
 {\pntext\f4\'B7\tab}Authentication based on OpenID Connect\par
 {\pntext\f4\'B7\tab}API Documentation using Swagger\par
 {\pntext\f4\'B7\tab}Angular CLI for managing client-side libraries\par
-{\pntext\f4\'B7\tab}Theming using Bootstrap\par
+{\pntext\f4\'B7\tab}Theming using Bootstrap 4\par
 
 \pard\widctlpar\sb100\sa100\b\fs36 You get the benefits of:\par
 
@@ -63,10 +63,18 @@ For the older asp.net core 1.x version:\~{{\field{\*\fldinst{HYPERLINK "https://
 
 \pard\widctlpar\sb100\sa100\b\fs36 Installation Notes\par
 
-\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\b0\fs20 When creating a new project please wait for all dependencies ("dotnet restore" & "npm install") to be restored.\line When using VisualStudio this is automatic, check the output window or status bar to know that the package/dependencies restore process is complete before launching your program for the first time.\par
-{\pntext\f4\'B7\tab}If you get this error: Unable to resolve 'OpenIddict', do the below steps to add myget.org to nuget package sources;\line Copy the "NuGet.config" from the project folder to the solution's folder (i.e. copy to the same folder location as your solutions file) and restart your IDE\line OR\line Add myget.org to your package sources in VisualStudio.\line Visual Studio -> Tools -> Options -> NuGet Package Manager -> Package Sources, Add "aspnet-contrib", this URL "{\cf0{\field{\*\fldinst{HYPERLINK https://www.myget.org/F/aspnet-contrib/api/v3/index.json }}{\fldrslt{https://www.myget.org/F/aspnet-contrib/api/v3/index.json\ul0\cf0}}}}\f0\fs20 "\par
-{\pntext\f4\'B7\tab}If you get any other errors, consider running manually the steps to build the project and note where the errors occur.\line Open command prompt and do the below steps:\line 1. run 'dotnet restore' from the two project folders - Restore nuget packages\line 2. run 'npm install' from the project with "ClientApp\\package.json" - Restore npm packages\line 3. Try running the application again - Test to make sure it all works\line\line *When I say "run from the project folder" I mean run the commands on the command line from those folders\line If any step fails, post the error details on the\~{{\field{\*\fldinst{HYPERLINK "https://www.ebenmonney.com/forum/?view=forum&id=14"}}{\fldrslt{\ul\cf2\cf2\ul support forum}}}}\f0\fs20\~for the needed assistance.\par
-{\pntext\f4\'B7\tab}For help and support post in the\~{{\field{\*\fldinst{HYPERLINK "https://www.ebenmonney.com/forum/?view=forum&id=14"}}{\fldrslt{\ul\cf2\cf2\ul support forum}}}}\f0\fs20 . For bug reports open an\~{{\field{\*\fldinst{HYPERLINK "https://github.com/emonney/QuickApp/issues"}}{\fldrslt{\ul\cf2\cf2\ul issue on github}}}}\f0\fs20\par
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\b0\fs20 When creating a new project please wait for all dependencies to be restored; "dotnet restore" for asp.net project & "npm install" for angular project. When using VisualStudio this is automatic, check the output window or status bar to know that the package/dependencies restore process is complete before launching your program for the first time.\par
+{\pntext\f4\'B7\tab}If you get any errors, consider running manually the steps to build the project and note where the errors occur. Open command prompt and do the below steps:\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent360\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li1080\sb100\sa100 run 'dotnet restore' from the two project folders - Restore nuget packages\par
+{\pntext\f0 ii.\tab}run 'npm install' from the project with package.json - Restore npm packages\par
+{\pntext\f0 iii.\tab}Try running the application again - Test to make sure it all works\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100 When running the client(angular) project on a different address/domain from the backend, configure the baseUrl of the client to match that of the server. You do this from environment.ts in the ClientApp/Angular project. Example: baseUrl: "{{\field{\*\fldinst{HYPERLINK http://yourbackendserver.com }}{\fldrslt{http://yourbackendserver.com\ul0\cf0}}}}\f0\fs20 " OR baseUrl: "{{\field{\*\fldinst{HYPERLINK http://localhost:5050 }}{\fldrslt{http://localhost:5050\ul0\cf0}}}}\f0\fs20 "\par
+{\pntext\f4\'B7\tab}For help and support post in the support forum\par
+{\pntext\f4\'B7\tab}For bug reports open an issue on github\par
 
 \pard\widctlpar\sb100\sa100\b\fs36 Login\par
 \b0\fs20 LOGIN WITH USERNAME OR EMAIL ADDRESS\par
