@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="5.0.0" Language="en-US" Publisher="Ebenezer Monney" />
-    <DisplayName>QuickApp - ASP.NET Core 5/Angular 11 Project Template</DisplayName>
+    <DisplayName>Angular 11/ASP.NET Core 5 Project Template</DisplayName>
     <Description xml:space="preserve">Free ASP.NET Core 5 / Angular 11 startup project template with complete login, user and role management. Plus other useful services for Quick Application Development</Description>
     <MoreInfo>https://github.com/emonney/QuickApp</MoreInfo>
     <License>LICENSE.txt</License>
