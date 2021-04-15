@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="3.0.0" Language="en-US" Publisher="Ebenezer Monney" />
-    <DisplayName>QuickApp - ASP.NET Core/Angular8 Project Template</DisplayName>
-    <Description xml:space="preserve">Free ASP.NET Core 3.0 / Angular 8 startup project template with complete login, user and role management. Plus other useful services for Quick Application Development</Description>
+    <Identity Id="QuickAppVSIX.Ebenezer Monney.2017d331-5ecf-41d0-928e-942dfaad8a79" Version="5.0.0" Language="en-US" Publisher="Ebenezer Monney" />
+    <DisplayName>QuickApp - ASP.NET Core 5/Angular 11 Project Template</DisplayName>
+    <Description xml:space="preserve">Free ASP.NET Core 5 / Angular 11 startup project template with complete login, user and role management. Plus other useful services for Quick Application Development</Description>
     <MoreInfo>https://github.com/emonney/QuickApp</MoreInfo>
     <License>LICENSE.txt</License>
     <GettingStartedGuide>https://ebenmonney.com/quickapp</GettingStartedGuide>
     <ReleaseNotes>ReleaseNotes.rtf</ReleaseNotes>
     <Icon>QuickApp.ico</Icon>
     <PreviewImage>PreviewImage.png</PreviewImage>
-    <Tags>angular, angular8, angularX, angular2, aspnet core 3.0, project, template, starter, quickapp, rad, rapid application development, aspnetcore, quick-app, angular 8, angular X, angular 2, ng8, ngX, ng2, quick application</Tags>
+    <Tags>angular, angular11, angularX, angular2, aspnet Core 5, project, template, starter, quickapp, rad, rapid application development, aspnetcore, quick-app, angular 11, angular X, angular 2, ng11, ngX, ng2, quick application</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
